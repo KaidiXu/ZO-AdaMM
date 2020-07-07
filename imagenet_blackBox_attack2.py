@@ -82,7 +82,7 @@ def main(args):
             ii = ii + 1
             image_id = image_id_set[ii]
             
-            if image_id!= 836: continue # for test only
+            # if image_id!= 836: continue # for test only
             
             orig_prob, orig_class, orig_prob_str = util.model_prediction(model,
                                         np.expand_dims(data.test_data[image_id], axis=0)) ## orig_class: predicted label;
